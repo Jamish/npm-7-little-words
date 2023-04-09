@@ -1,6 +1,6 @@
 {
   "name": "7-little-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A solver library for solving puzzles from 7LittleWords.com",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -21,7 +21,11 @@
     "puzzle solver"
   ],
   "author": "Jamison Schuster",
-  "license": "ISC",
+  "license": "CC0 1.0 Universal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamish/npm-7-little-words.git"
+  },
   "files": [
     "lib/**/*",
     "resources/**/*"
