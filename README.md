@@ -1,6 +1,8 @@
 ### Hello!
+This package is on npm:
+https://www.npmjs.com/package/7-little-words
 
-### Guide
+I followed this tutorial--hopefully I set up my package properly!
 https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c
 
 ### Word List
