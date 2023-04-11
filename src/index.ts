@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises';
+import * as path from 'node:path';
 import * as _ from 'lodash';
 
 export type Solution = Map<string, string[]>;
@@ -16,7 +17,7 @@ class Solver {
 
     async loadDictionary(): Promise<void> {
         try {
-            const filePath = './resources/words.txt';
+            const filePath = path.resolve(__dirname, '../resources/words.txt') ;
             const contents = await readFile(filePath, { encoding: 'utf8' })
 
             const words = contents.toString().split("\n");
