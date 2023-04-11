@@ -1,6 +1,6 @@
 {
   "name": "7-little-words",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A solver library for solving puzzles from 7LittleWords.com",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
