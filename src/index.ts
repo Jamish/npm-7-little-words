@@ -17,12 +17,12 @@ class Solver {
 
     async loadDictionary(): Promise<void> {
         try {
-            const filePath = path.resolve(__dirname, '../resources/words.txt') ;
-            const contents = await readFile(filePath, { encoding: 'utf8' })
+            const filePath = path.resolve(__dirname, '../resources/words.txt');
+            const contents = await readFile(filePath, { encoding: 'utf8' });
 
-            const words = contents.toString().split("\n");
+            const words = contents.toString().split('\n');
 
-            words.forEach(untrimmedWord => {
+            words.forEach((untrimmedWord) => {
                 const word = untrimmedWord.trim();
                 let sameLengthWordSet = this._dictionary.get(word.length);
                 if (sameLengthWordSet === undefined) {
@@ -57,7 +57,7 @@ class Solver {
                 return;
             }
 
-            remainingTiles.forEach(tile => {
+            remainingTiles.forEach((tile) => {
                 const newString = currentString + tile;
                 if (newString.length > wordLength) {
                     return [];
@@ -68,7 +68,7 @@ class Solver {
             });
         }
 
-        recurse("", [], this.tiles);
+        recurse('', [], this.tiles);
         return solution;
     }
 }
