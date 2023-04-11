@@ -1,4 +1,6 @@
-### Hello!
+### Overview
+This is a solver for https://www.7littlewords.com/ puzzles.
+
 This package is on npm:
 https://www.npmjs.com/package/7-little-words
 
